@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-root",
+  "version": "1.0.0",
+  "description": "Detect, request and use superuser permissions on Android devices.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N0ps32/cordova-plugin-root.git"
+  },
+  "keywords": [
+    "cordova",
+    "root",
+    "superuser",
+    "android",
+    "request",
+    "shell"
+  ],
+  "author": "Benjamin Räder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/N0ps32/cordova-plugin-root/issues"
+  },
+  "homepage": "https://github.com/N0ps32/cordova-plugin-root#readme"
+}
