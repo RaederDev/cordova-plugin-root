@@ -1,0 +1,7 @@
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'eu.chainfire:libsuperuser:1.0.0.+'
+}
