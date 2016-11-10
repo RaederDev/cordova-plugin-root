@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-root" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Root</name>
+    <author>Benjamin Räder (https://www.raeder.technology)</author>
+    <description>Detect, request and use superuser permissions on Android devices.</description>
+    <keywords>cordova, root, superuser, android, request, shell</keywords>
+    <license>MIT</license>
+    <repo>https://github.com/N0ps32/cordova-plugin-root</repo>
+    <issue>https://github.com/N0ps32/cordova-plugin-root/issues</issue>
+    <js-module name="Root" src="www/root.js">
+        <clobbers target="root"/>
+    </js-module>
+    <platform name="android">
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+        <source-file src="src/android/Root.java" target-dir="src/technology/raeder/root"/>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Root">
+                <param name="android-package" value="technology.raeder.root.Root"/>
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
